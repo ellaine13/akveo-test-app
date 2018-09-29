@@ -1,6 +1,8 @@
 html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
+
+	width: 1700px;
 }
 
 body {
@@ -19,8 +21,6 @@ body {
 	background-position: center center;
 	background-color: #8462dd;
 	background-size: cover;
-
-	width: 1700px;
 }
 
 h1 {
@@ -401,7 +401,7 @@ a:hover {
 }
 
 .box__head {
-	padding: 24px 36px;
+	padding: 24px 36px 21px;
 	border-bottom: 1px solid #f6f6f8;
 }
 
@@ -461,11 +461,40 @@ a:hover {
 	margin-bottom: .75em;
 }
 
+.box__content {
+	padding: 19px 36px 16px;
+	border-bottom: 2px solid #f9f9f9;
+}
+
 .box__foot {
 	padding: 31px 36px 32px;
 	text-align: center;
 }
 /* END box */
+
+
+/* tableData */
+.tableData {
+	text-align: left;
+	border: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	line-height: 1.65;
+	color: #8b97af;
+}
+
+.tableData th {
+	width: 41%;
+	vertical-align: top;
+	padding: 8px 0 7px;
+	color: #536281;
+}
+
+.tableData td {
+	vertical-align: top;
+	padding: 8px 0 7px;
+}
+/* END tableData */
 
 
 /* btn */
