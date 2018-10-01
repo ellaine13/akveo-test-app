@@ -64,6 +64,24 @@ document.addEventListener('DOMContentLoaded', function(){
 		},
 		{
 			"featureType": "road.arterial",
+			"elementType": "geometry.fill",
+			"stylers": [
+				{
+					"color": "#f8f8f8"
+				}
+			]
+		},
+		{
+			"featureType": "road.arterial",
+			"elementType": "geometry.stroke",
+			"stylers": [
+				{
+					"visibility": "off"
+				}
+			]
+		},
+		{
+			"featureType": "road.arterial",
 			"elementType": "labels.text.fill",
 			"stylers": [
 				{
@@ -86,6 +104,15 @@ document.addEventListener('DOMContentLoaded', function(){
 			"stylers": [
 				{
 					"color": "#fadba4"
+				}
+			]
+		},
+		{
+			"featureType": "road.highway",
+			"elementType": "labels.text.fill",
+			"stylers": [
+				{
+					"color": "#414246"
 				}
 			]
 		},
