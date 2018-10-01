@@ -222,4 +222,23 @@ document.addEventListener('DOMContentLoaded', function(){
 	if (mapOneNameId) {
 		initMap(mapOneNameId, pinCoord);
 	}
+
+
+	var copyInBufferBtn = document.querySelector('.js-buffer-btn');
+
+	copyInBufferBtn.addEventListener('click', function(event) {
+		var universityId = document.querySelector('.js-university-id'),
+			range = document.createRange();
+
+		range.selectNode(universityId);
+		window.getSelection().addRange(range);
+
+		try {
+			document.execCommand('copy');
+		} catch(err) {
+			console.log('Oops, unable to copy');
+		}
+
+		window.getSelection().removeAllRanges();
+	});
 });
