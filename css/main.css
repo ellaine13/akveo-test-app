@@ -1,8 +1,6 @@
 html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
-
-	width: 1700px;
 }
 
 body {
@@ -590,6 +588,24 @@ a:hover {
 	border-radius: 5px;
 	background-color: #fff;
 	box-shadow: 0 0 20px rgba(0, 0, 0, .05);
+}
+
+.gm-style .gm-style-iw {
+	max-width: 165px;
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: .23px;
+}
+
+.gm-style-iw__title {
+	color: #5c94d1;
+}
+
+.gm-style-iw__route {
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: .17px;
+	color: #555;
 }
 /* END map */
 

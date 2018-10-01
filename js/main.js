@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		}
 	];
 
-	function initMap(id,shops) {
+	function initMap(id,universities) {
 		var map = new google.maps.Map(id, {
 			zoom: 13,
 			center: {lat: 32.702768, lng: -117.200434},
@@ -160,14 +160,14 @@ document.addEventListener('DOMContentLoaded', function(){
 			styles: styles
 		});
 
-		setMarkers(map,shops);
+		setMarkers(map,universities);
 	}
 
 	var pinCoord = [
-		['<a href="shop-one.html">Riga, Mascavas iela 250/4</a><div class="gm-style-iw__route">проезд трамваем 1, автобусами 243, 56 до остановки Mascavas</div>', 32.702768, -117.200434, 3]
+		['<div class="gm-style-iw__title">California University</div><div class="gm-style-iw__route">United States, California LA, Sarigza Avenue 234, 44A</div>', 32.702768, -117.200434, 3]
 	];
 
-	function setMarkers(map, shops) {
+	function setMarkers(map, universities) {
 		var infowindow = new google.maps.InfoWindow({
 			content: 'text'
 		});
@@ -184,14 +184,14 @@ document.addEventListener('DOMContentLoaded', function(){
 			anchor: new google.maps.Point(sizeX / 2, sizeY / 2)
 		};
 
-		for (var i = 0; i < shops.length; i++) {
-			var shop = shops[i];
+		for (var i = 0; i < universities.length; i++) {
+			var unvsty = universities[i];
 			var marker = new google.maps.Marker({
-				position: {lat: shop[1], lng: shop[2]},
+				position: {lat: unvsty[1], lng: unvsty[2]},
 				map: map,
 				icon: image,
-				title: shop[0],
-				zIndex: shop[3]
+				title: unvsty[0],
+				zIndex: unvsty[3]
 			});
 
 			google.maps.event.addListener(marker, 'click', (function(marker) {
