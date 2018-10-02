@@ -241,4 +241,16 @@ document.addEventListener('DOMContentLoaded', function(){
 
 		window.getSelection().removeAllRanges();
 	});
+
+	var burgerBtn = document.querySelector('.burger'),
+		menu = document.querySelector('.header__menu'),
+		header = document.querySelector('.header'),
+		body = document.querySelector('body');
+
+	burgerBtn.addEventListener('click', function() {
+		burgerBtn.classList.toggle('active');
+		menu.classList.toggle('active');
+		header.classList.toggle('active');
+		body.classList.toggle('no-scroll');
+	});
 });
